@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@color/site">
+
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:id="@+id/aracbilgi"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/aracbilgileri"
+        ></ImageView>
+    <Button
+        android:id="@+id/aracbtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/aracbilgi"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:text="otomobil Kütüphanesi"
+        ></Button>
+
+    <ImageView
+        android:id="@+id/sitegit"
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/aracbtn"
+        android:layout_marginLeft="30dp"
+        android:src="@mipmap/maxresdefault"></ImageView>
+    <Button
+        android:id="@+id/sitebtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/sitegit"
+        android:backgroundTint="@color/grey"
+        android:textColor="@color/white"
+        android:text="En Popüler 10 otomobil sitesi"
+        ></Button>
+
+    <RatingBar
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/sitebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtn"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"></RatingBar>
+    <Button
+        android:layout_below="@id/rtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnrtn"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/grey"
+        android:text="Gönder"></Button>
+    <TextView
+        android:layout_below="@id/sitebtn"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt"
+        android:text="Sonuç"
+        android:textColor="@color/white"
+        android:textSize="25sp"></TextView>
+
+</RelativeLayout>
